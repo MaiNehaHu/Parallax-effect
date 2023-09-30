@@ -28,15 +28,15 @@ const Parallax = () => {
 
   return (
     <React.Fragment>
-      <div className="parallax w-full h-[85dvh] bg-white">
+      <div className="parallax w-screen h-[85dvh] bg-white">
         <h1
           style={{ marginTop: textMargin }}
-          className="w-full dvh-height absolute top-0 text-center flex items-center justify-center font-robot font-bold text-3xl text-white z-[1]"
+          className="w-screen dvh-height absolute top-0 text-center flex items-center justify-center font-robot font-bold text-3xl text-white z-[1]"
         >
-          PARALLAX EFFECT IN REACT JS WITH TAILWIND CSS
+          PARALLAX EFFECT IN REACT JS
         </h1>
 
-        <div className="images w-full dvh-height absolute top-0">
+        <div className="images w-screen dvh-height absolute top-0 overflow-x-hidden">
           <img
             src={image1}
             alt="image 1"
@@ -73,15 +73,11 @@ const Parallax = () => {
             className="parallax-image z-[2]"
           />
           <img
-            src={plant}
-            alt="plant"
-            className="top-0 parallax-image z-[3]"
-          />
-          <img
             src={tree}
             alt="tree"
             className="top-0 parallax-image z-index-negative"
           />
+          <img src={plant} alt="plant" className="top-0 parallax-image z-[3]" />
         </div>
       </div>
     </React.Fragment>
