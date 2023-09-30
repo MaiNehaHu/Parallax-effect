@@ -4,15 +4,26 @@ import Parallax from "./Components/Parallax/Parallax";
 import "./App.css";
 import Body from "./Components/Body/Body";
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 const App = () => {
   return (
-    <React.Fragment >
-      <Header />
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/Parallax-effect"
+          element={
+            <React.Fragment>
+              <Header />
 
-      <Parallax />
+              <Parallax />
 
-      <Body />
-    </React.Fragment>
+              <Body />
+            </React.Fragment>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
