@@ -1,0 +1,30 @@
+@tailwind base; /*base layer*/
+@tailwind components; /*component layer*/
+
+.parallax-image {
+  @apply absolute w-screen h-[100dvh] object-cover bottom-0 pointer-events-none;
+}
+
+.z-index-negative {
+  @apply -z-0;
+}
+
+.nav-button {
+  @apply hover:text-white hover:bg-green-700 py-2 px-4 rounded-2xl max-sm:px-1 max-sm:py-1 max-sm:rounded-md;
+}
+
+.dvh-height{
+    @apply h-[100dvh]
+}
+
+@tailwind utilities; /*utilities layer*/
+
+/**
+* @layer components{
+* .nav-button {
+    @apply hover:text-white hover:bg-green-700
+   }
+* }
+
+this will be appended to the component layer at the end.
+*/
