@@ -1,4 +1,5 @@
 ## Project with Tailwind CSS
+## link: https://mainehahu.github.io/Parallax-effect/
 
 > 01. `npm create vite@latest`
 
